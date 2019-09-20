@@ -1,0 +1,79 @@
+<!doctype html> 
+<html> 
+    <head> 
+    <title> Styling med CSS</title>
+<!-- her referer vi til fonten "Sans Condensed" fra Google Fonts --> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet"> 
+    <meta charset="utf-8>"> 
+    <style>
+/* CSS deles op i tre dele: selector - proporty - value */  
+        h1 {
+            color:darkred; 
+/* HEX-farvekode */
+            background-color: #eee;
+            font-family: "sans condensed" arial, verdana, sans-serif;
+            font-size: 42px;
+            font-style: italic;
+            text-align: Center;
+            letter-spacing: 3px;
+            text-transform: uppercase; 
+            margin-left: 50px;
+            margin-right: 92px; 
+            margin-top: 50px; 
+            margin-bottom: 100px;
+/* ovenstående er det samme som: margin: 100px 92px 100px 50px; (starter fra toppen og går uret rundt*/
+            padding: 50px;
+            border: 8px dotted orange;
+            /* text-decoration: underline; */ 
+        }
+        body {
+/* rgb-farvekode */
+            background-color: rgb(255,204,168);
+            background-image: url("laks.jpg");
+            background-repeat: no-repeat;
+            /* background-position: center center;
+            background-attachment: fixed; */ 
+            background-size: cover;
+        }
+        p { 
+            font-family: georgia, "times new roman", serif;
+            font-size: 18px; 
+            font-weight: bold; 
+            text-align: justify; 
+            line-height: 150%;
+        }
+        a {
+            font-family: "sans condensed", serif;
+            color: darkorange;
+            border: 2px dotted red;
+            padding: 10px;
+            margin-top: 20px;
+            width: 500px;
+        }
+        a:link{
+            color:bisque;
+        }
+        a:visited {
+            color:antiquewhite;
+        }
+        a:hover {
+            color: #ddd;
+            font-family: arial;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        a:active {
+            color:chocolate;
+        }
+    </style>
+    </head>
+    <body> 
+<!-- når CSS skrives inde i et tag som en attribut, kaldes det for "inline style" -->
+    <h1 style="color:coral;">Styling med CSS</h1>
+    <p style="color:darksalmon;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti maiores autem ullam quo consectetur nemo similique maxime labore cum molestias voluptatem, ea accusantium soluta facere nisi aut suscipit dolore quod minus! Et doloribus fugiat recusandae, numquam, possimus tempore.</p>
+    <h1>En anden overskrift</h1>
+    <a href="http://dr.dk"> Dette er et link.</a> 
+    <a href="http://google.com">Et andet link</a>
+    </body>
+</html>
